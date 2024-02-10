@@ -307,6 +307,10 @@ function respondToValentine(answer) {
   }
 }
 
+function playAudio() {
+  var audio = document.getElementById("myAudio");
+  audio.play();
+}
 // Run fetch and animation in sequence
 const resolveFetch = () => {
   return new Promise((resolve, reject) => {
