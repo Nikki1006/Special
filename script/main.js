@@ -294,6 +294,19 @@ const fetchData = () => {
     });
 };
 
+function respondToValentine(answer) {
+  var wishText = document.getElementById("wishText");
+  if (answer) {
+      // If Yes is selected
+      wishText.textContent = "Yes";
+      // Continue with whatever action you want for Yes
+  } else {
+      // If No is selected
+      wishText.textContent = "Why do you hate me babes";
+      // Perform any other action you want for No
+  }
+}
+
 // Run fetch and animation in sequence
 const resolveFetch = () => {
   return new Promise((resolve, reject) => {
